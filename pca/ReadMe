@@ -1,0 +1,14 @@
+Breast cancer, should be (0.9906103286384976, 0.951048951048951, 0.9906103286384976, 0.951048951048951)
+(0.9882629107981221, 0.951048951048951, 0.9553990610328639, 0.958041958041958)
+Iris 2 vs all, should be (0.9732142857142857, 0.9736842105263158, 0.9732142857142857, 0.9736842105263158)
+(0.9821428571428571, 0.9736842105263158, 0.8214285714285714, 0.8947368421052632)
+Iris 1 vs all, should be (0.7589285714285714, 0.6578947368421053, 0.7589285714285714, 0.6578947368421053)
+(0.75, 0.6842105263157895, 0.7767857142857143, 0.6842105263157895)
+Iris 0 vs all, should be (1.0, 1.0, 1.0, 1.0)
+(1.0, 1.0, 0.9107142857142857, 0.8947368421052632)
+
+
+I chose to use logistic regression for all of them, to get a good comparison of how well I could get a PCA-Logreg to work across the board.
+It seemed to work fairly well for the Breast Cancer Dataset, and for the Iris dataset, except for the Iris 0 vs all. I remain uncertain as to why this one was so different.
+I used 16 PCs for BC, because it seemed to be a good mix of reducing the number of components meaningfully and still maintaining accuracy.
+I used 3 PCs for each of the Iris tests because it didn't seem to want to go any lower.
